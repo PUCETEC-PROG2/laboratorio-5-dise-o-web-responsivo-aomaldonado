@@ -1,0 +1,114 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 32px;
+
+}
+
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.pokemon-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 300px;
+    max-width: 300px;
+    min-width: 300px;
+}   
+
+.pokemon-card:hover {
+    transform: translate(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background: linear-gradient(#000, #00a0dd, rgb(46, 139, 244));
+}
+
+.pokemon-info {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+    text-transform: capitalize;
+    margin: 0;
+}   
+
+.pokemon-type {
+    padding: 4px 8px;
+    border-radius: 20px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.type-fire {
+    background: linear-gradient(135deg, red, orange);
+}
+
+.type-electric {
+    background: linear-gradient(135deg, rgb(59, 151, 231), rgb(23, 37, 223));
+}
+
+.type-water {
+    background: linear-gradient(135deg, rgb(130, 190, 249), rgb(20, 27, 231));
+}
+
+.type-normal {
+    background: linear-gradient(135deg, rgb(191, 232, 246), rgb(111, 239, 218));
+}
+
+.type-ghost {
+    background: linear-gradient(135deg, rgb(174, 235, 179), rgb(20, 179, 86));
+}
+
+.type-psychic {
+    background: linear-gradient(135deg, rgb(240, 242, 117), rgb(188, 234, 35));
+}
+
+.type-grass {
+    background: linear-gradient(135deg, rgb(141, 250, 150), rgb(5, 110, 49));
+}
+
+@media screen and  (max-width: 900px){
+    .pokemon-grid{
+        gap: 12px;
+        width: 100%;
+        padding: 16px
+    }
+    .pokemon-card{
+        flex: calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pokemon-grid {
+        gap: 16px;
+    }
+
+    .pokemon-card {
+        flex: 100%;
+        max-width: 100%
+    }
+}
