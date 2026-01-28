@@ -1,7 +1,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 32px;
+    padding: 40px;
 }
 
 .trainers-grid {
@@ -22,6 +22,8 @@
     flex: 1 1 calc(33.3333% - 32px);
     max-width: calc(33.3333% - 32px);
     min-width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 6px;
 }
 
 .trainer-card:hover {
@@ -35,6 +37,7 @@
     height: 250px;
     object-fit: cover;
     background: linear-gradient(135deg, #13ecaf 0%, #13b1ea 100%);
+    border-radius: 14px;
 }
 
 .trainer-info {
@@ -141,7 +144,7 @@
         padding: 2px;
         gap: 1px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
     }
 
     .trainer-name,
