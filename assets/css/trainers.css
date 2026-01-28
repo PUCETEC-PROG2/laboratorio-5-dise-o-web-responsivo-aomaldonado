@@ -33,7 +33,7 @@
 .trainer-image {
     width: 100%;
     height: 250px;
-    object-fit: contain;
+    object-fit: cover;
     background: linear-gradient(135deg, #13ecaf 0%, #13b1ea 100%);
 }
 
@@ -41,9 +41,10 @@
     padding: 16px;
     display: flex;
     flex-direction: column;
-    gap: 100%;
-    align-items: center;
+    gap: 10px;
+    align-items: stretch;
     justify-content: space-between;
+    text-align: center;
 }
 
 .trainer-name {
