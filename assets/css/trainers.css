@@ -40,8 +40,8 @@
 .trainer-info {
     padding: 16px;
     display: flex;
-    flex-direction: row;
-    gap: 16px;
+    flex-direction: column;
+    gap: 100%;
     align-items: center;
     justify-content: space-between;
 }
